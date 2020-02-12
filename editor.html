@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Rich Text Editor</title>
+        <link rel='stylesheet' type='text/css' href='./editor.css'>
+        <link href='https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+        <script src='./editor.js'></script>
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='toolbar'>
+                <a href='#' data-command='bold'>
+                    <i class='fa fa-bold' aria-hidden='true'></i>
+                </a>
+                <a href='#' data-command='italic'>
+                    <i class='fa fa-italic' aria-hidden='true'></i>
+                </a>
+                <a href='#' data-command='underline'>
+                    <i class='fa fa-underline' aria-hidden='true'></i>
+                </a>
+
+                <a href='#' data-command='justifyLeft'>
+                    <i class='fa fa-align-left' aria-hidden='true'></i>
+                </a>
+                <a href='#' data-command='justifyCenter'>
+                    <i class='fa fa-align-center' aria-hidden='true'></i>
+                </a>
+                <a href='#' data-command='justifyRight'>
+                    <i class='fa fa-align-right' aria-hidden='true'></i>
+                </a>
+                <a href='#' data-command='justifyFull'>
+                    <i class="fa fa-align-justify" aria-hidden="true"></i>
+                </a>
+
+                <a href='#' data-command='insertOrderedList'>
+                    <i class='fa fa-list-ol' aria-hidden='true'></i>
+                </a>
+                <a href='#' data-command='insertUnorderedList'>
+                    <i class='fa fa-list-ul' aria-hidden='true'></i>
+                </a>
+
+                <select id="font-family">
+                    <optgroup label='Sans-Serif'>
+                        <option value='Arial'>Arial</option>
+                        <option value='Arial Black'>Arial Black</option>
+                        <option value='Comic Sans MS'>Comic Sans MS</option>
+                        <option value='Impact'>Impact</option>
+                        <option value='Lucida Sans Unicode'>Lucida Sans Unicode</option>
+                        <option value='Tahoma'>Tahoma</option>
+                        <option value='Trebuchet MS'>Trebuchet MS</option>
+                        <option value='Verdana'>Verdana</option>
+                    </optgroup>
+                    <optgroup label='Serif'>
+                        <option value='Georgia'>Georgia</option>
+                        <option value='Palatino Linotype'>Palatino Linotype</option>
+                        <option value='Times New Roman'>Times New Roman</option>
+                    </optgroup>
+                    <optgroup label='Monospace'>
+                        <option value='Courier New'>Courier New</option>
+                        <option value='Lucida Console'>Lucida Console</option>
+                    </optgroup>
+                </select>
+
+                <select id="font-size">
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3' selected="selected">3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                </select>
+
+                <select id="title-size">
+                    <option value='H1'>Título 1</option>
+                    <option value='H2'>Título 2</option>
+                    <option value='H3'>Título 3</option>
+                    <option value='H4'>Título 4</option>
+                    <option value='H5'>Título 5</option>
+                    <option value='H6'>Título 6</option>
+                </select>
+            </div>
+            <div class='editor' contenteditable></div>
+        </div>
+    </body>
+</html>
